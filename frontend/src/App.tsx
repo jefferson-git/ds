@@ -1,10 +1,18 @@
-import NotificationButton from "./components/notificationButton";
+import Header from "./components/Header";
+import SelesCard from "./components/SelesCard/SelesCard";
+import "./index.css";
 
 function App() {
   return (
     <>
-      <h1>ola</h1>
-      <NotificationButton />
+      <Header />
+      <main>
+        <section id="sales">
+          <div className="dsmeta-container">
+            <SelesCard />
+          </div>
+        </section>
+      </main>
     </>
   );
 }
