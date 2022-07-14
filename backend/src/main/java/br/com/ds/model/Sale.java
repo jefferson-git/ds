@@ -6,16 +6,18 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@SuppressWarnings("serial")
-@Entity(name = "TB_SALES") @Getter @Setter
+@Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@SuppressWarnings("serial")
+@Entity @Table(name = "tb_sales")
 public class Sale implements Serializable{
 	
 	@Id

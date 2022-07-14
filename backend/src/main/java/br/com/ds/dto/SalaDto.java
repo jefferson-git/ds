@@ -13,7 +13,7 @@ import lombok.Setter;
 @AllArgsConstructor @Setter
 public class SalaDto implements Serializable{
 
-	private Integer id;
+	private Long id;
 	private String sellerName;
 	private Integer visited;
 	private String deals;
