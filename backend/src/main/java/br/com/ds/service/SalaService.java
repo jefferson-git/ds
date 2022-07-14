@@ -81,11 +81,6 @@ public class SalaService implements Serializable, SaleContract{
 		Twilio.init(twilioSid, twilioKey);
 		PhoneNumber to = new PhoneNumber(twilioPhoneTo);
 		PhoneNumber from = new PhoneNumber(twilioPhoneFrom);
-		Message.creator(to, from, msg).create();
-	
-		
+		Message.creator(to, from, msg).create();		
 	}
-
-	
-
 }
