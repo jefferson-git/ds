@@ -21,7 +21,7 @@ public class Sale implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String sellerName ;
+	private String sellerName;
 	private Integer visited;
 	private String deals;
 	private Double amount;
