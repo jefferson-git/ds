@@ -1,15 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import NotificationButton from "../notificationButton";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./styles.css";
+import axios from "axios";
 
 function SelesCard() {
   const [minDate, setMinDate] = useState(new Date());
   const [maxDate, setMaxDate] = useState(new Date());
-
-  // const date = new Date(new Date().setDate(new Date().getDate() - 365));
+  useEffect(() => {
+    axios.get("https://ds-venda.herokuapp.com/sale").then((response) => {
+      console.log(response.data);
+    });
+  }, []);
 
   return (
     <>
